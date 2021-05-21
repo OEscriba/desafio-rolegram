@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #101010;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.rolegram-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.left-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.left-img img {
+    height: 50rem;
+}
+
+.right-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.login-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #303030;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid black;
+}
+
+.login-box:nth-child(1) {
+    min-height: 25rem;
+}
+
+.rolegram-logo {
+    height: 7rem;
+}
+
+.profile-photo {
+    align-items: center;
+    vertical-align: center;
+    border: 2px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-photo img {
+    height: 9rem;
+}
+
+.rolegram-login {
+    background-color: white;
+    color: black;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.rolegram-remove {
+    color: white;
+    margin-top: 1rem;
+}
+
+.logout {
+    color: #909090;
+}
+
+.link-white {
+    color: white;
+}
+
+.download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+
+}
+
+.get-app {
+    color: white;
+}
+
+.appstores {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.store {
+    height: 3rem;
+    width: 10.2rem;
+    background-size: cover;
+}
+
+.store:nth-child(1) {
+    background-image: url('img/googleplay-button.png')
+}
+
+.store:nth-child(2) {
+    background-image: url('img/apple-button.png');
+}
+
+@media (max-width: 1024px) {
+    .rolegram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        color: #303030;
+    }
+
+    .login-box {
+        border: 1px solid transparent;
+    }
+
+    .rolegram-wrapper {
+        width: 90%;
+    }
+
+    .left-img {
+        display: none;
+    }
+
+    .right-options {
+        width: 100%;
+    }
+}
