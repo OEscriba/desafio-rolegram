@@ -125,7 +125,7 @@ body {
 }
 
 .store:nth-child(1) {
-    background-image: url('img/googleplay-button.png')
+    background-image: url('img/googleplay-button.png');
 }
 
 .store:nth-child(2) {
@@ -138,7 +138,7 @@ body {
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 650px) {
     body {
         color: #303030;
     }
